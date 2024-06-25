@@ -55,6 +55,8 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  console.log(`Math PI value is:   ${Math.PI/2}`)
+
   return (
     <Canvas
       frameloop='demand'
@@ -67,7 +69,7 @@ const ComputersCanvas = () => {
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
-          // minPolarAngle={Math.PI / 2}
+          minPolarAngle={isMobile ? Math.PI/2 : null}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
