@@ -8,9 +8,10 @@ const CanvasLoader = () => {
       center
       style={{
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        height: "100px",
+        marginTop: "40px"
       }}
     >
       <span className='canvas-loader'></span>
@@ -19,10 +20,11 @@ const CanvasLoader = () => {
           fontSize: 14,
           color: "#F1F1F1",
           fontWeight: 800,
-          marginTop: 40,
+          marginTop: "40px",
+          textAlign: "center"
         }}
       >
-        {progress.toFixed(2)}%
+        {progress.toFixed(0)}%
       </p>
     </Html>
   );
