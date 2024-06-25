@@ -55,7 +55,6 @@ const ComputersCanvas = () => {
     };
   }, []);
 
-  console.log(`Math PI value is:   ${Math.PI/2}`)
 
   return (
     <Canvas
